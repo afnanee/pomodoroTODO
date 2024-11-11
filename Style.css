@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+.time{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 70px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.title{
+    font-size: 40px;
+}
+.hr{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+}
+.timer{
+    font-size: 90px;
+    font-weight: 500;
+}
+.button-wrapper{
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+}
+.button-wrapper button{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border:none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#start{background-color: #A5B68D;}
+#stop{background-color: #F05A7E;}
+#reset{background-color: #789DBC;}
+
+.button-wrapper button:hover{
+    transform: translateY(-10px)
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#E8BCB9,#4B4376);
+    padding: 2px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 70px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #AE445A;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.todo-app li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.todo-app li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
